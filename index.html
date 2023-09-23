@@ -1,11 +1,54 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="main.css">
+        <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/yegor256/tacit@gh-pages/tacit-css.min.css"/>-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.min.css"/>
         <script src="/htmx.js"></script>
+        <script>
+            <!-- On Page Load -->
+            window.addEventListener("load", onPageLoad);
+            async function onPageLoad(){
+                fetch("/components/about.html").then(
+                    async (response) => {
+                        response.text().then((value)=> {
+                            document.getElementById("content-div").innerHTML = value;
+                        });
+                    },
+                    async (error) => {
+                        document.getElementById("content-div").innerHTML = value;
+                    }
+                );
+            }
+        </script>
     </head>
     <body>
-        <div hx-get="/message.txt">
-            Control Click Me
+        <header>
+            <center>
+                Freelance Software Developer
+                <h1>
+                    Htet Aung Hlaing
+                </h1>
+                <nav>
+                    <a hx-get="/components/projects.html" hx-target="#content-div">Projects</a>
+                    <a hx-get="/components/about.html" hx-target="#content-div">About</a>
+                    <a hx-get="/components/contact.html" hx-target="#content-div">Contact</a>
+                </nav>
+            </center>
+        </header>
+        <hr>
+        <div id="content-div">
+
         </div>
+        <hr>
+        <footer>
+            <center>
+                <p>
+                All icons by <a target="_blank" href="https://icons8.com">Icons8</a> 
+                <br>
+                Hosted on <a href="https://github.com/DreamerChaserHAH/portfolio_website">Github</a>
+                </p>
+            </center>
+        </footer>
     </body>
 </html>
