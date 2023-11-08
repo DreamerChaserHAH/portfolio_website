@@ -1,3 +1,94 @@
-img{ border-radius: 50%;}
 
+@font-face {
+    font-family: 'space_grotesk';
+    src: url('Fonts/spacegrotesk-webfont.woff2') format('woff2'),
+         url('Fonts/spacegrotesk-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    font-family: 'space_grotesk';
+    background-color: #020122;
+    color: #EAE0D5
+}
+
+nav{
+    margin-top: 2%;
+}
+
+nav a + a {
+    margin-left: 2%;
+}
+
+a{
+    color: #EAE0D5;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: line-through;
+    text-decoration-color: #EAE0D5;
+}
+
+.section{
+    height:100vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+
+.section_content{
+
+}
+
+.fillinsection{
+    height: 40vh;
+}
+.halfsection{
+    height: 50vh;
+}
+.sectionfillin{
+    height: 20vh;
+}
+
+#nametitle{
+    position: sticky;
+    top: 0;
+}
+
+#hero{
+    position: sticky;
+    top: 0;
+    background-color: #020122;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    width: 80vw;
+    height: 20vh;
+    background-color: #020122;
+}
+
+#Contact .section_content{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+}
+.contact_content{
+    text-align: right; 
+    border-right: 1px solid #EAE0D5;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+@media only screen and ( min-width: 915px ){
+    .section{
+        margin-left: 30vw;
+        margin-right: 30vw;
+    }
+}
 

@@ -1,62 +1,158 @@
 <!DOCTYPE html>
 <html>
     <head>
-
-        <meta property="og:title" content="Htet Aung Hlaing | Freelance Software Developer">
-        <meta property="og:image" content="https://media.licdn.com/dms/image/D5603AQFtgrR3osVlZA/profile-displayphoto-shrink_800_800/0/1693071994961?e=1700697600&v=beta&t=E1Ehitt0jNXMFVTGgzC4nW1AUMYH4zcw0m8FPGMDjDc"/>
-        <meta property="og:description" content="Visit this site to know more about how unique this software developer is"/>
-
         <meta name="viewport" content="width=device-width,initial-scale=1"/>
-        <meta name="description" content="My professional portfolio website"/>
-        <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/yegor256/tacit@gh-pages/tacit-css.min.css"/>-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"/>
-        <link rel="stylesheet" href="main.css">
-        <script src="/htmx.js"></script>
-        <script>
-            <!-- On Page Load -->
-            window.addEventListener("load", onPageLoad);
-            async function onPageLoad(){
-                fetch("/components/about.html").then(
-                    async (response) => {
-                        response.text().then((value)=> {
-                            document.getElementById("content-div").innerHTML = value;
-                        });
-                    },
-                    async (error) => {
-                        document.getElementById("content-div").innerHTML = value;
-                    }
-                );
-            }
-        </script>
-        <title>Htet Aung Hlaing</title>
+
+        <title>HTET AUNG HLAING</title>
+        <link rel="stylesheet" href="main.css"/>
     </head>
     <body>
-        <header>
-            <center>
-                Freelance Software Developer
-                <h1>
-                    Htet Aung Hlaing
-                </h1>
-                <nav>
-                    <a hx-get="/components/projects.html" hx-target="#content-div">Projects</a>
-                    <a hx-get="/components/about.html" hx-target="#content-div">About</a>
-                    <a hx-get="/components/contact.html" hx-target="#content-div">Contact</a>
-                </nav>
-            </center>
-        </header>
-        <hr>
-        <div id="content-div">
-
+        <div class="fillinsection"></div>
+        <div>
+        <center id="hero">
+            <header>
+                <center>
+                    <i>Ethan</i>
+                    <h1><strong>HTET AUNG HLAING</strong></h1>
+                    <span>Aspiring ML engineer</span>
+                    <nav>
+                        <a href="#About">About</a>
+                        <a href="#Skills">Skills</a>
+                        <a href="#Projects">Projects</a>
+                        <a href="#Contact">Contact</a>
+                 </nav>
+                </center>
+                <hr>
+            </header>
+        </center>
+        <div class="halfsection"></div>
+        <div id="About" class="section">
+            <div class="sectionfillin"></div>
+            <div class="section_content">
+                <center>
+                    <h1>
+                        About
+                    </h1>
+                    I am a
+                    <br>
+                    <br>
+                    <h2>
+                        Student
+                    </h2>
+                    <p>
+                        As a first year AI student at Asia Pacific University of Technology in Malaysia, I hope that I can become more well-versed in Data Engineering, Data Analysis and Machine Learning
+                    </p>
+                    <h2>
+                        Backend Developer
+                    </h2>
+                    <p>
+                        A backend developer with general freelancing experience on Upwork from Game Development, Website Development to Desktop Application Development
+                    </p>
+                    <h2>
+                        Low-key Nerd High-key Research-alcoholic
+                    </h2>
+                    <p>
+                        I am interested not just in tech but in other fields as well; Business, Entreprenurship, Law, Stoicism, Debate, Chess, Productivity. I spend most of my living hours trying to research and optimize my life for a better future
+                    </p>
+                </center>
+            </div>
         </div>
-        <hr>
-        <footer>
-            <center>
-                <p>
-                All icons by <a target="_blank" href="https://icons8.com">Icons8</a> 
-                <br>
-                Hosted on <a href="https://github.com/DreamerChaserHAH/portfolio_website">Github</a>
-                </p>
-            </center>
-        </footer>
+        <div id="Skills" class="section">
+            <hr>
+            <div class="sectionfillin"></div>
+            <div class="section_content">
+                <center>
+                    <h1>
+                        Skills
+                    </h1>
+                    <p>
+                        I have a wide variety of skills &#128519
+                    </p>
+                    <table>
+                        <tr>
+                            <td>
+                                <ul>
+                                    <li>
+                                        C#
+                                    </li>
+                                    <li>
+                                        C++
+                                    </li>
+                                    <li>
+                                        Python
+                                    </li>
+                                    <li>
+                                        Htmx
+                                    </li>
+                                    <li>
+                                        Git
+                                    </li>
+                                    <li>
+                                        Data Engineering (learning in progress)
+                                    </li>
+                                    <li>
+                                        Machine Learning (learning in progress)
+                                    </li>
+                                    <li>
+                                        Scrum
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </center>
+            </div>
+        </div>
+        <div id="Projects" class="section">
+            <hr>
+            <div class="sectionfillin"></div>
+            <div class="section_content">
+                <center>
+                    <h1>
+                        Projects
+                    </h1>
+                    <p>
+                        Here's a list of personal projects I have done before
+                    </p>
+                    <table>
+                        <tr>
+                            <td>
+                                <img width="30vw" height="30vw" src="Images/Jet.png"/>
+                            </td>
+                            <td>
+                                <img width="30vw" height="30vw" src="Images/Car.png"/>
+                            </td>
+                            <td>
+                               <img width="30vw" height="30vw" src="Images/Tank.png"/>
+                            </td>
+                        </tr>
+                    </table>
+                    Coming Soon!
+                </center>
+            </div>
+        </div>
+        </div>
+        <div id="Contact" class="section">
+            <hr>
+            <div class="section_content">
+                    <div class="contact_content">
+                        <p>
+                            Interested in Working with Me?
+                        </p>
+                        <h1>
+                            Contact Me
+                        </h1>
+                    </div>
+                    <div class = "contact_content">
+                        <ul>
+                                contact@htetaung.com
+                            <h4>My Blog</h4>
+                                <a>Substack Technical Blog</a>
+                                <br>
+                                <a href="https://medium.com/@dreamerethan">Medium Personal Blog</a>
+                        </ul>
+                    </div>
+            </div>
+        </div>
     </body>
 </html>
