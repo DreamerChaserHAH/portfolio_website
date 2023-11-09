@@ -83,6 +83,9 @@ header{
     border-right: 1px solid #EAE0D5;
     padding-right: 10px;
     padding-left: 10px;
+    padding-top: 10%;
+    height: 20%;
+    top: 50%;
 }
 
 @media only screen and ( min-width: 915px ){
